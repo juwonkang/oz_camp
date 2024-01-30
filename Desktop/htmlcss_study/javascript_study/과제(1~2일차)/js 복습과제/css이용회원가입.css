@@ -1,0 +1,78 @@
+#title{
+    margin-top: 30px;
+}
+
+
+.container {
+    box-shadow: 
+        5px 5px 5px red,      /* 빨간색 그림자 */
+        10px 10px 10px yellow, /* 노란색 그림자 */
+        15px 15px 15px blue,   /* 파란색 그림자 */
+        20px 20px 20px purple, /* 보라색 그림자 */
+        25px 25px 25px rgb(186, 147, 186); /* 자주색 그림자 */
+    width: 500px;
+    height: 800px;
+    margin: 0 auto;
+    background-color: rgb(181, 236, 157);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.container > input{
+    width:300px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+    border: green 1px solid;
+}
+
+.numbersection{
+    padding:10px;
+}
+#phonenumber{
+    width: 84px;
+    
+
+}
+
+
+
+.admitsection{
+    width: 300px;
+    margin: 20px;
+    text-align: right;
+  
+}
+
+
+select{
+    width: 300px;
+    height: 30px;
+
+}
+#joinbutton{
+    margin-top: 20px;
+    width: 300px;
+    height: 30px;
+
+
+}
+#joinbutton:hover{
+    color: rgb(15, 157, 157);
+
+}
+
+
+
+div > p{
+    display: inline;
+}
+
+#title{
+  text-align:center;  
+
+}

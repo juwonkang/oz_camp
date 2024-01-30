@@ -1,0 +1,45 @@
+html{
+    background-color: lightsalmon
+}
+
+
+
+body{
+    
+    width: 900px;
+    height: 350px;
+    background-color: white;
+    
+    border-radius: 10px;
+}
+
+
+
+
+.firstbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 350px;
+   
+    background-color: yellow;
+    border-radius: 10px 1px 1px 10px;
+}
+
+#play{
+    color: rgb(45, 186, 14);
+}
+.mainbox{
+    
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    bottom: 300px;
+    left: 165px;
+}

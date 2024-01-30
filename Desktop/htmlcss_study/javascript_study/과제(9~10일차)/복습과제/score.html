@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 150px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        tr{
+            text-align: center;
+        }
+        .name , .score  {
+            
+            border: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>결과</h2>
+
+        <table id="table">
+            <tr id="row">
+                <td class="name">짱구</td>
+                <td class="score">64</td>
+            </tr>
+            <tr>
+                <td class="name">철수</td>
+                <td class="score">84</td>
+            </tr>
+            <tr>
+                <td class="name">훈이</td>
+                <td class="score">54</td>
+            </tr>
+            <tr>
+                <td class="name">나미</td>
+                <td class="score">77</td>
+            </tr>
+            <tr>
+                <td class="name">규리</td>
+                <td class="score">34</td>
+            </tr>
+            <tr>
+                <td class="name">철구</td>
+                <td class="score">94</td>
+            </tr>
+            <tr>
+                <td class="name">맹구</td>
+                <td class="score">84</td>
+            </tr>
+        </table>
+    </div>
+    <div id="compare">
+        <button id="result">결과보기
+        </button>
+      
+    </div>
+
+    <script>
+        const score = document.querySelectorAll(".score")
+        const name = document.querySelectorAll(".name")
+        const result =document.getElementById("result")
+        const cells = document.querySelectorAll("#table td")
+        const compare = document.getElementById("compare")
+
+
+        //I don't understand it !!!!!!!!!!
+
+        var scores =[];
+        score.forEach(function(element) {
+        scores.push(element.textContent);
+        });
+        console.log(scores)
+
+        var names = []
+        name.forEach(function(element){
+        names.push(element.textContent);
+        });
+        console.log(names)
+
+        //중복제거  이것도 이해불가
+        function clearResults(){
+            while(compare.firstChild)
+            compare.removeChild(compare.firstChild);
+        }
+
+      
+
+        //70점이상 뽑기 함수
+        function pick (){
+            clearResults()
+            for(let i = 0; i <= scores.length; i++){
+                if(parseInt(scores[i]) > 70){
+                    const winner = document.createElement("p")
+                    winner.innerText = names[i] + ':' +  scores[i];
+                    compare.appendChild(winner)
+
+
+
+                }
+            }
+
+        }
+
+
+
+
+        result.addEventListener("click" , function(){
+            
+         pick()
+
+                
+
+
+            }
+
+        )
+
+
+
+
+    </script>
+</body>
+</html>

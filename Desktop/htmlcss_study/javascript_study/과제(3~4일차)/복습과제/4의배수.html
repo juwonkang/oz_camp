@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            display: inline-block;
+            margin: 5px; /* 숫자 간격을 위한 여백 추가 */
+        }
+     
+    </style>
+</head>
+<body>
+    <h2>4의 배수 5개씩 출력하기</h2>
+
+
+
+
+    <script>
+        let i=100;
+        while(i <= 500 ){
+            let now = i
+            
+            
+            if (i % 20 === 0) {
+                document.body.appendChild(document.createElement("br"));
+            }
+     
+
+            i +=4
+
+            
+            const p = document.createElement("p")
+            p.textContent =`${now}`
+            document.body.append(p)
+
+
+        }
+
+    </script>
+</body>
+</html>

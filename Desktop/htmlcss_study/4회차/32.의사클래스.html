@@ -1,0 +1,62 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .menu{
+            padding: 10px;
+            border-bottom: 2px black solid;
+        }
+        .menu > li{
+            display: inline-block;
+            text-align: center;
+        }
+        li > a {
+            display: inline-block;
+            width: 80px;
+            padding: 10px;
+            text-decoration: none;
+        }
+        a:hover{
+            color: white;
+            background-color: black;
+        }
+        a:active{
+        background-color: blue;
+        }
+        li:nth-child(2n){
+            font-size: 50px;
+        
+
+
+        }
+        /* 의사요소 */
+        a::first-letter{
+            color: red;
+        }
+
+        a::after{
+            content: "보기";
+            color: aqua;
+        }
+
+
+
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+        <li><a href = "#">사전</a></li>
+        <li><a href = "#">사전</a></li>
+        <li><a href = "#">사전</a></li>
+        <li><a href = "#">사전</a></li>
+
+
+
+    </ul>
+    
+  </body>
+  </html>

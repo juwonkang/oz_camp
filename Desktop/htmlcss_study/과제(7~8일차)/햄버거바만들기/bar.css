@@ -1,0 +1,74 @@
+.header{
+  
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    background-color: rgb(30, 32, 28);
+}
+li{
+    padding: 10px;
+}
+
+  
+ul{
+    
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 10px;
+   
+    
+    
+}
+
+.mainhome{
+    font-size: 20px;
+    color: white;
+    
+    background-color: green;
+}
+
+.inputmenu{
+    font-size: 30px;
+    background-color:transparent;
+
+    display: none;
+}
+.hiddennav > ul{
+    visibility: hidden;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+.hiddenmenu > input{
+    display: none;
+}
+
+.hiddenmenu{
+    display: flex;
+    justify-content: center;
+}
+#menuToggle:checked + #toggleBtn + .hiddennav > ul {
+    visibility: visible; /* 체크박스가 체크되면 hiddennav를 보이게 함 */
+}
+
+@media screen and (max-width: 550px) {
+    .header{
+        display: none;
+       
+    }
+ 
+
+    .inputmenu{
+        display: block;
+        position: absolute;
+    }
+  
+}
+

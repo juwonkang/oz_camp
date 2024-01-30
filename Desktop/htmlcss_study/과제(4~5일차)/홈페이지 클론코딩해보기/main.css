@@ -1,0 +1,99 @@
+
+main{
+    margin-top: 20px;
+    width: 100%;
+    height: 5000px;
+    background-color: whitesmoke;
+}
+.firsttext{
+    margin-left: 30px;
+    display: flex;
+
+
+    color: darkgray;
+    font-size: 36px;
+
+
+}
+.firstimagebox{
+    margin-left: 30px;
+    width: 1300px;
+    height: 100px;
+  
+    
+}
+
+#mac, #iphone, #iPad, #watch, #AirPods, #airtag, #TV {
+    width: 120px;
+    height: 78px;
+}
+label {
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+}
+.middletext{
+    margin-top: 50px;
+    margin-left: 30px;
+    color: darkgray;    
+}
+
+.middleimg1{
+    position: relative;
+    margin-left: 30px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px 3px gray;
+    margin: 10px;
+}
+.middleimgtext{
+    position: absolute;
+    top: 650px;
+    left: 100px;
+    transform: translate( -50%, -50% );
+    color: rgb(255, 255, 255);
+}
+.middleimgtext1{ 
+    position: absolute;
+    top: 660px;
+    left: 600px;
+    transform: translate( -50%, -50% );
+    color: rgb(0, 0, 0);
+
+}
+.middleimg1:hover{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+footer{
+    margin-left: 20px;
+}
+.footerlink{
+    
+    width: 400px;
+    height: 50px;
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+li{
+    background-color: rgb(174, 174, 174);
+    border-radius: 10px;
+    padding: 10px;
+}
+.footertext >p{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    font-size: 12px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}

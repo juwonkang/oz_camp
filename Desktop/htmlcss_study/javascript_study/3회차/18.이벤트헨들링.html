@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="span">span</button>
+    <button id="strong">strong</button>
+    <button id="mark">mark</button>
+    <hr>
+
+    <script>
+        const spanbtn =document.getElementById("span")
+        const strongbtn =document.getElementById("strong")
+        const markbtn =document.getElementById("mark")
+
+      const handleclick = function(event){
+        if(event.target.id == 'span' ){
+            const span = document.createElement("span")
+            span.textContent ="A New Span tag"
+            document.body.append(span)
+        
+        }else if(event.target.id == 'strong' ){
+            const strong = document.createElement("strong")
+            strong.textContent ="A New strong tag"
+            document.body.append(strong)
+        
+
+        }else if(event.target.id == 'mark' ){
+            const mark = document.createElement("mark")
+            mark.textContent ="A New mark tag"
+            document.body.append(mark)
+        
+
+        }
+    }
+   
+
+        spanbtn.addEventListener('click', handleclick)
+        strongbtn.addEventListener('click', handleclick)
+        markbtn.addEventListener('click', handleclick)
+
+
+    </script>
+</body>
+</html> 

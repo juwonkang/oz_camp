@@ -1,0 +1,79 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+html{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(45deg, Violet, Orange);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+body{
+   
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 80px;
+    font-style: italic;
+    font-weight: bold;
+   text-align: center;
+    
+}
+
+
+
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    width: 1000px;
+    height: 150px;
+    border-radius: 40px;
+}
+#days , #hours , #minutes , #seconds{
+   margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 100px;
+    background: linear-gradient(lightCyan, rgb(172, 207, 222), rgb(165, 216, 233));
+    border-radius: 30px;
+}
+
+.number1, .number2, .number3, .number4 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.text{
+    margin: 5px;
+}
+
+
+.mybirth{
+    font-weight: bold;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background: linear-gradient(lightCyan, rgb(172, 207, 222), rgb(165, 216, 233));
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

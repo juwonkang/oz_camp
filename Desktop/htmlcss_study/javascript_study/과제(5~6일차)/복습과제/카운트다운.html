@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            font-size: 26px;
+        }
+
+       div{
+        display: inline-block;
+        padding: 20px;
+       }
+       
+    
+    </style>
+</head>
+<body>
+    
+
+    <p id="today"></p>
+    <p id="endtime"></p>
+
+
+
+
+
+
+
+
+    <script>
+        const today = document.getElementById("today")
+        const endtime = document.getElementById("endtime")
+        
+       
+        
+        let count = setInterval(function countdown(){
+            const p = document.getElementById("today")
+
+                const now = new Date()
+
+                let year = now.getFullYear()
+                let month = now.getMonth() + 1
+                let date = now.getDate()
+                let hour = now.getHours()
+                let min = now.getMinutes()
+                let sec = now.getSeconds()
+
+                
+                p.textContent = `현재 시간은 ${year}년 ${month}월 ${date}일 ${hour}:${min}:${sec}`},1000);
+                
+                
+                
+                function updatetimer(){
+                    
+                const now = new Date()
+                let then = new Date(2024,11,31,23,59,59.999);
+        
+          
+
+                    let diff = then - now;
+
+                    const secs = Math.floor(diff / 1000);
+                    const mins = Math.floor(diff/(1000*60));
+                    const hours = Math.floor(diff/(1000*60*60));
+                    const days = Math.floor(diff/((1000*60*60*24)));
+
+                    const d = days;
+                    const h = hours - days * 24;
+                    const m = mins - hours * 60;
+                    const s = secs - mins * 60;
+
+
+                    endtime.innerHTML =
+                    '올해의 남은 시간은  <div>' + d + '<span>일</span></div>' +
+                    '<div>' + h + '<span>시간</span></div>' +
+                    '<div>' + m + '<span>분</span></div>' +
+                    '<div>' + s + '<span>초</span></div>';
+                }
+
+                setInterval(updatetimer,1000);
+
+        
+       
+       
+
+
+    </script>
+</body>
+</html>

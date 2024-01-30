@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>My Calculate</h2>
+        <div id="buttonbox">
+            <input class="screen">
+            <br>
+            <input class="Number" type="button" value="7">
+            <input class="Number" type="button" value="8">
+            <input class="Number" type="button" value="9">
+            <input class="cal" type="button" value="X">
+            
+            <br>
+            <input class="Number" type="button" value="4">
+            <input class="Number" type="button" value="5">
+            <input class="Number" type="button" value="6">
+            <input class="cal" type="button" value="-">
+            <br>
+            <input class="Number" type="button" value="1">
+            <input class="Number" type="button" value="2">
+            <input class="Number" type="button" value="3">
+            <input class="cal" type="button" value="+">
+            <br>
+            <input class="Number" type="button" value="0">
+            <input type="button" value=".">
+            <input class="cal" type="button" value="=">
+            <br>
+        </div>
+
+
+    </div>
+
+        
+    
+
+
+
+
+    <script>
+        const numbers = document.querySelectorAll(".Number");
+        const screen = document.querySelector(".screen");
+    
+        numbers.forEach(function (number) {
+            number.addEventListener("click", function () {
+                alert("asdf");
+            });
+        });
+    </script>
+    
+</body>
+</html>

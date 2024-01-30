@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container"></div>
+
+
+    <script>
+        function createP(content, color){
+        const p = document.createElement("p")
+        p.style.color = color
+        p.textContent = content
+        document.querySelector("#container").appendChild(p)
+
+        return `방금만든태그의 콘텐츠 : ${content}, ${color}`
+
+
+
+    }
+     console.log(createP("11111", "red"))
+     console.log(createP("222222", "green"))
+     console.log(createP("3333333", "blue"))
+
+
+
+
+    </script>
+</body>
+</html>

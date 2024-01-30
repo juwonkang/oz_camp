@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="item">강주원</p>
+    <button id="set">set</button>
+    <button id="get">get</button>
+    <button id="remove">remove</button>
+    <button id="clear">clear</button>
+
+
+
+    
+
+    <script>
+
+        const item  = document.getElementById("item")
+        document.getElementById("set").addEventListener("click",function(){
+            window.localStorage.setItem("이름" , item.textContent)
+        })
+
+        document.getElementById("get").addEventListener("click",function(){
+            alert(localStorage.getItem("이름"))
+        })
+
+        document.getElementById("remove").addEventListener("click",function(){
+            (localStorage.removeItem("이름"))
+        })
+        document.getElementById("clear").addEventListener("click",function(){
+            (localStorage.clear())
+        })
+
+
+
+         
+    </script>
+</body>
+</html>

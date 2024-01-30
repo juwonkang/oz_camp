@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body > div {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>별 트리 찍기</h2>
+    <div id="1번별">
+        1번별 <p id="realstar1"></p>
+    </div>
+    <div id="2번별">
+        2번별 <p id="realstar2"></p>
+    </div>
+    <div id="3번별">
+        3번별 <p id="realstar3"></p>
+    </div>
+
+    <script>
+        let count1 = prompt("1번째 별 그릴 개수를 입력하세요");
+        let count2 = prompt("2번째 별 그릴 개수를 입력하세요");
+        let count3 = prompt("3번째 별 그릴 개수를 입력하세요");
+
+        function generateStars(count) {
+            let stars = '';
+            for (let i = 1; i <= count; i++) {
+                for (let j = 0; j < i; j++) {
+                    stars += '*';
+                }
+                stars += '<br>';
+            }
+            return stars;
+        }
+
+        const realstar1 = document.getElementById("realstar1");
+        realstar1.innerHTML = generateStars(count1);
+
+        const realstar2 = document.getElementById("realstar2");
+        realstar2.innerHTML = generateStars(count2);
+
+        const realstar3 = document.getElementById("realstar3");
+        realstar3.innerHTML = generateStars(count3);
+    </script>
+</body>
+</html>

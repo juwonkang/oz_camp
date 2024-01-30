@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자 맞추기</title>
+
+    <style>
+        html{
+            background-color: rgb(9, 8, 8);
+        }
+        #container{
+            padding: 50px;
+            width: 100%;
+            height: 600px;
+            background-color: gray;
+            
+            text-align: center;
+        }
+        #submit{
+            font-size: 26px;
+            padding: 10px;
+            color: white;
+            border: 3px solid purple;
+            background-color: purple;
+            border-radius: 5px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        #submit:hover{
+            transform: scale(1.2,1.2);
+            transition-duration: 0.3s;
+            border-bottom: 4px dotted yellow;
+
+        }
+
+        #input{
+            font-size: 30px;
+            text-align: center;
+            background-color: whitesmoke;
+            border: none;
+            border-radius: 5px;
+        }
+        #container > p{
+            font-size: 30px;
+            color: whitesmoke;
+           
+        }
+        #buttonContainer > button{
+            font-size: 26px;
+            background-color: green;
+            border: 1px black solid;
+            border-radius: 5px;
+            color: whitesmoke;
+            padding: 10px;
+
+            
+
+        }
+        #buttonContainer > button:hover{
+            transform: skew(45deg), scale(1.5,1.5);
+            transform: rotate(-360deg);
+            transition-duration: 1s;
+        }
+        #buttonContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+      
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Mystery Number 맞추기 </h1>
+        <P>1부터 100사이의 숫자를 입력하세요!</P>
+        <input id="input">
+        <input type="button" value="뚜둥!" id="submit">
+        <p id="hint"></p>
+        <div id="buttonContainer"></div>
+        
+    </div>
+
+
+
+
+    <script>
+        const input = document.getElementById("input")
+        const submit =document.getElementById("submit")
+        const hintElement = document.getElementById("hint");
+        const random = Math.floor(Math.random()*100)
+        console.log(random);
+
+        
+        submit.addEventListener("click" , function(event){
+            event.preventDefault();
+            const chance =parseInt(input.value)
+            console.log(input.value);
+            
+        
+     
+            
+            
+
+            if(random < chance){ㅊㄷ
+                hintElement.textContent = `힌트 : 숫자가 커요 조금 낮춰볼까요?`
+                
+                
+            }else if(random > chance){
+                hintElement.textContent = `힌트 : 숫자가 작아요 조금 눂혀볼까요?`
+                
+
+            }else{
+                alert("정답입니다 참 잘했어요!")
+                const again = document.createElement("button")
+                again.innerHTML = "다시하기"
+                buttonContainer.insertBefore(again, buttonContainer.firstChild);
+               
+            
+  
+                again.addEventListener("click" , function(){
+                    location.reload();
+
+
+             }) 
+           
+           
+          }
+        
+            
+
+
+   });
+
+        
+    </script>
+</body>
+</html>

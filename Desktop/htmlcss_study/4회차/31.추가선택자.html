@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    [width *="2"]{ /*값의 포함여부 2 포함한거 다*/
+        border: 5px red dotted;
+    }
+
+    [width ^="2"]{/*값의 시작 2 시작한거 다*/
+        border: 5px red dotted;
+    }
+
+    [width $= "2"]{/*값의 끝 2 끝나는거 다*/
+        border: 5px red dotted;
+    }
+
+    body em{
+        color: blue;
+    }
+    body >p{
+        color: yellow;
+    }
+
+    #sam + p{
+        color: brown;
+    }
+    #sam ~p{ 
+        background-color: black;
+    }
+
+
+
+
+
+</style>
+<body>
+    <img src="image/IMG_0821.jpg" width="120" alt="주원1">
+    <img src="image/IMG_2744.jpg" width="120">
+    <img src="image/IMG_3475.jpg" width="120" id="sam">
+    <p>sdlkfja;lskdjf;klasjdlkfjasd</p>
+    <p>sdlkfja;lskdjf;klasjdlkfjasd</p>
+    <p>sdlkfja;ls<em>강주원</em>;klasjdlkfjasd</p>
+    <p>sdlkfja;lskdjf;klasjdlkfjasd</p>
+
+     
+</body>
+</html>

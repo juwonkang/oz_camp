@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        text-align: center;
+        padding: 20px;
+
+    }
+</style>
+<body>
+    <div id="container">
+        <h2>가위바위보 게임</h2>
+        <p>가위, 주먹, 보 중에 하나를 입력하세요!</p>
+
+        <input id="input" placeholder="입력하세요">
+        <input id="result" type="submit" value="결과확인">
+        <input id="reset" type="button" value="리셋">
+        <p id="resultmsg"></p>
+        <p id="resultmsg1"></p>
+    
+    
+    </div>
+
+
+
+    <script>
+        const input = document.getElementById("input")
+        const result = document.getElementById("result")
+        const reset = document.getElementById("reset")
+        const resultmsg = document.getElementById("resultmsg")
+        const resultmsg1 = document.getElementById("resultmsg1")
+
+        const ai = ["가위","주먹","보"]
+        const rn = Math.floor(Math.random() * 3 )
+        console.log(rn)
+        console.log(ai[rn]) 
+        
+        
+        result.addEventListener("click", function(){
+            const rn1 = Math.floor(Math.random() * 3 )
+
+             if(input.value === ai[rn1]){
+                resultmsg.textContent ="비겼습니다"
+            }else if(input.value === "가위" && ai[rn1] === "보"){
+                resultmsg.textContent ="이겼습니다"
+            
+            }else if(input.value === "가위" && ai[rn1] === "주먹"){
+                resultmsg.textContent ="졌습니다"
+            
+            }else if(input.value === "보" && ai[rn1] === "가위"){
+                resultmsg.textContent ="졌습니다"
+            }
+            else if(input.value === "보" && ai[rn1] === "주먹"){
+                resultmsg.textContent ="이겼습니다"
+            }
+            else if(input.value === "주먹" && ai[rn1] === "가위"){
+                resultmsg.textContent ="이겼습니다"
+            }
+            else if(input.value === "주먹" && ai[rn1] === "보"){
+                resultmsg.textContent ="졌습니다"
+            }
+            else if(input.value = ''){
+                resultmsg.textContent ="입력을 해주세요";
+                
+            }
+            resultmsg1.textContent =`내가 입력한 값 : ${input.value} // 컴퓨터가 입력한값 : ${ai[rn1]}`
+
+        })
+
+        reset.addEventListener("click", function(){
+            location.reload(true);
+        })
+
+
+    </script>
+</body>
+</html>

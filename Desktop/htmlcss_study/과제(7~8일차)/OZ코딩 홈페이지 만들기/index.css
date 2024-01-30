@@ -1,0 +1,194 @@
+.container{
+    width: 100%;
+    background-color: whitesmoke;
+}
+.firstsection{
+    width: 100%;
+    height: 500px;
+    
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+
+    background-image: url(image/backgroundimg.jpeg);
+    background-size:cover
+    
+    
+}
+.firstsection > h2{
+    animation: light 0.5s step-end infinite;
+
+   color: white;
+   font-size: 36px;
+ 
+     
+}
+
+
+@keyframes light{
+   50%{
+    opacity: 0;
+   }
+}
+.mainbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    position: fixed;
+
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.mainbar > h1{
+    color: white;
+
+}
+.mainbar > .menu{
+    color: white;
+    list-style-type: none;
+    display: flex;
+    
+}
+.menu{
+    margin-right: 20px;
+}
+.menu > li{
+    padding: 10px;
+    
+}
+li:hover{
+    color: orange;
+}
+.hiddenmenu{
+    display: none;
+}
+
+.hiddenmenu > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+  
+}
+
+.hiddenmenu > ul > li{
+    list-style: none;
+    color: white;
+    display: none;
+   
+}
+
+.button-label{
+    font-size: 26px;
+    background-color:whitesmoke;
+    
+    display: none;
+}
+.button-label > .button{
+   
+    display:none;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .menu > li{
+        display: none;
+    }
+    .button-label{
+        display: block;
+        
+    }
+    .mainbar{
+        display: flex;
+        justify-content: space-around
+    }
+    .cardbox{
+        flex-direction: column;
+    }
+    .firstsection > h2{
+    font-size: 26px;
+    }
+    #button:checked + #toggleBtn + .hiddenmenu > ul > li {
+        display: block;
+   
+}
+}
+
+
+.bottompage{
+    width: 100%;
+    height: 900px;
+}
+.bottompage > p, h1{
+    font-size: 36px;
+    padding: 20px 0px 20px;
+    
+    display: flex;
+    justify-content: center;
+
+}
+.bottompage > p{
+    color:darkmagenta;
+}
+
+.cardbox{
+    width: 100%;
+    height: 300px;
+    
+
+    display: flex;
+    justify-content: space-between;
+}
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: scale(1.1,1.1);
+    transition-duration: 2s;
+
+}
+
+.card1, .card2 ,.card3{
+    width: 400px;
+    height: 550px;
+    border-radius: 30px;
+    background-color: rgb(160, 87, 228);
+    box-shadow: 5px 5px gray;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .card1 > .img{
+    margin: 10px;
+    font-size: 100px;
+ }
+ .card1 > .title{
+    font-size: 26px;
+    color: blue;
+ }
+ .card2 > .img{
+    margin: 10px;
+    font-size: 100px;
+ }
+ .card2 > .title{
+    font-size: 26px;
+    color: blue;
+ }
+ .card3 > .img{
+    margin: 10px;
+    font-size: 100px;
+ }
+ .card3 > .title{
+    font-size: 26px;
+    color: rgb(57, 221, 123);
+ }
+
+
+

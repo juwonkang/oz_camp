@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS를 이용한 회원가입</title>
+    <link href="css이용회원가입.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+       
+        <h1 id="title">OZ초격차 회원가입</h1>
+        <input id="email" type="email" placeholder="이메일을 입력해주세요">
+        <input id="name" type="text" placeholder="이름을 입력해주세요">
+        <input id="password" type="password" placeholder="비밀번호를 입력해주세요">
+        <input id="password" type="password" placeholder="비밀번호를 다시 입력해주세요">
+        
+    <div class="numbersection">    
+        <input id="phonenumber" type="tel" placeholder=010>
+        <p id="numberbar"> - </p> 
+        <input id="phonenumber" type="tel" placeholder=1234>
+        <p id="numberbar"> - </p>
+        <input id="phonenumber" type="tel" placeholder=5679>
+    </div>
+        <div class="admitsection">
+        <p>000000</p>
+        <button type="submit" id="submit">인증번호 전송</button>
+        <br>
+        <br>
+        <p>3:00</p>
+        <button type="submit" id="submit">인증완료</button>
+    </div>    
+    
+    <div class="selctsection">
+        <select id = "city" onchange="changeFn()">
+            <option name="city" id="region" value="경기" >경기</option>
+            <option name="city" id="region" value="부산">부산</option>
+            <option name="city" id="region" value="서울">서울</option>
+            <option name="city" id="region" value="대구">대구</option>
+            <option name="city" id="region" value="대전">대전</option>
+            <option name="city" id="region" value="제주">제주</option>
+        </select>
+        <br>
+        <input type="radio" id="a" name="gender" value="여성">
+        <label for="a">여성</label>
+        <input type="radio" id="b" name="gender" value="남성">
+        <label for="b">남성</label>
+        <br>
+        <button id="joinbutton" type="button">가입하기</button>
+
+
+
+        <div class="container1" ></div>
+        <div class="container2" ></div>
+        <div class="container3" ></div>
+        <div class="container4" ></div>
+
+
+    </div>
+    </div>
+    
+    <script>
+        document.querySelector("#joinbutton").addEventListener('click',function(){
+            
+            var email = document.querySelector("#email").value;
+            var name = document.querySelector("#name").value;
+            var password = document.querySelector("#password").value;
+            var phonenumber = document.querySelector("#phonenumber").value;
+             
+            var city =document.getElementById('city')
+            var value =(city.options[city.selectedIndex].value)
+            var gender = document.querySelector('input[name="gender"]:checked').value
+            
+
+
+            console.log("이메일:", email);
+            console.log("이름은 : ", name);
+            console.log("비밀번호는 : ", password);
+            console.log("전화번호는 : ", phonenumber);
+          
+            console.log(value)
+            console.log(gender)
+           
+
+           
+        
+        });
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button id="draw">추첨</button>
+    <p id="number"></p>
+    
+
+    <script>
+        const button = document.getElementById("draw")
+        const p = document.getElementById("number")
+
+        let rn = Math.floor(Math.random()*10)   
+       
+        button.addEventListener("click" , function(){
+            p.textContent = Math.floor(Math.random() * 100) + 1
+        })
+    </script>
+</body>
+</html>

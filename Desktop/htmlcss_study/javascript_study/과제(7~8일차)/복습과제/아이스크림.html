@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <button id="input">아이스크림 종류 추가</button>
+        <button id="output">아이스크림 이름 출력</button>
+        <button id="outputscreen">입력한 아이스크림 종류 출력</button>
+        <h2>입력한 아이스크림 : </h2>
+        <p id="screen"></p>
+    </div>
+    
+
+    <script>
+        const input =document.getElementById("input")
+        const output =document.getElementById("output")
+        const outputscreen =document.getElementById("outputscreen")
+        const screen = document.getElementById("screen")
+
+        const icecreamList = [];
+       
+
+        input.addEventListener("click" , function(){
+            let a = prompt("먹고싶은 아이스크림을 입력하세요!")
+            icecreamList.push(a)
+        })
+        console.log(icecreamList)
+
+        output.addEventListener("click" , function(){
+            alert(icecreamList)
+        })
+
+        outputscreen.addEventListener("click" , function(){
+            screen.textContent = `당신이 입력한 아이스크림은 : ${icecreamList} ` 
+
+        })
+
+    </script>
+</body>
+</html>

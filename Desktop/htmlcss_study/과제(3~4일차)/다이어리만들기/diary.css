@@ -1,0 +1,94 @@
+
+
+body{
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left: 300px;
+    justify-content: center;
+    margin: 0;
+    width: 800px;
+    height: 1000px;
+    border:  solid lightpink 10px;
+    border-radius: 20px;
+}
+
+
+header{
+    
+    padding: 15px;
+    margin: 0 auto;
+    
+   
+    width: auto;
+    height: auto;   
+    
+}
+.date{
+   
+    font-size: 26px;
+    padding: 10px;
+    display: inline;
+    width: auto;
+    height: auto;
+    border: 3px solid black;
+}
+.weather{
+
+    padding: 10px;
+    display: flex;
+    
+    
+
+
+    display: inline;
+}
+.weather > p{
+    display: inline;
+}
+main{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    
+}
+h2 {
+    text-decoration: underline;
+    letter-spacing: 5px; /* 원하는 간격 설정 */
+
+}
+
+#mainimg1{
+    
+    border-radius: 10px;
+    height: 300px;
+    width: 800px
+   
+}
+#mainimg2{
+    padding: 10px;
+    height: 300px;
+    width: 800px
+}
+.mytext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mytext table {
+    border-collapse: separate;
+    border-spacing: 1px;
+    overflow: auto;
+}
+
+.mytext td {
+    
+    padding: 18px; /* 각 셀의 안팎 여백을 조절하세요 */
+    border: 1px solid #000; /* 셀의 테두리를 추가하세요 */
+    text-align: center;
+}

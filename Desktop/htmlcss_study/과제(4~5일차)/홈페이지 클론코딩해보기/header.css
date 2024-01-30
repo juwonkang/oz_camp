@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+  
+    
+}
+.mainimg{
+    width: 48px;
+    height: 48px;
+}
+
+.maincategory {
+
+    
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+@media screen and (max-width: 800px) {
+    .maincategory{
+        display: none;
+    }
+    
+}
+.maincategory p {
+    margin-right: 15px; 
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconglass > input{
+    margin-right: 1rem;
+    border: none;
+    padding: 0  ;
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+.iconmenu > input{
+    margin-right: 1rem;
+    border: none;
+    padding: 0  ;
+    font-size: 2rem;
+    background-color: transparent;
+}

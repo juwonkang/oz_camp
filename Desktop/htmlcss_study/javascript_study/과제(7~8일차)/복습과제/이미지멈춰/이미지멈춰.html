@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 불러오기</title>
+    <style>
+        #test {
+            display: flex;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="test"></div>
+    <button id="stop" value="stop">stop</button>
+
+    <script>
+        const test = document.getElementById("test");
+        const stopButton = document.getElementById("stop");
+        let intervalId;
+
+        function url(imagePath) {
+            return `<img src="${imagePath}" alt="이미지">`;
+        }
+
+        let imageArray = ['중간사진2.jpeg', '중간사진4.jpeg', '중간사진3.jpeg'];
+        let currentIndex = 0;
+
+        function updateImage() {
+            test.innerHTML = url(imageArray[currentIndex]);
+            currentIndex = (currentIndex + 1) % imageArray.length;
+        }
+
+        // 100ms(0.1초)마다 updateImage 함수를 호출하여 이미지를 변경
+        intervalId = setInterval(updateImage, 100);
+
+        // stop 버튼 클릭 시 인터벌을 멈추도록 설정
+        stopButton.addEventListener("click", function() {
+            clearInterval(intervalId);
+        });
+    </script>
+</body>
+</html>

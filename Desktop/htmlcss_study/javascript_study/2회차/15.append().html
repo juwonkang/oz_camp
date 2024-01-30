@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="container">
+
+
+    </div>
+
+
+    <script>
+
+        for(let a = 0; a<5; a++){
+        const div = document.getElementById("container")
+
+        const box =  document.createElement("div")
+        console.log(box)
+
+        box.style.color = "blue"
+        box.style.width ="200px"
+        box.style.height ="200px"
+        box.textContent ="신기하지만 재밌다"
+
+        div.appendChild(box);
+        }
+
+
+
+    </script>
+</body>
+</html>

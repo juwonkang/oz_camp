@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            padding: 10px;
+            border : 2px black solid
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td id="two"></td>
+            <td id="three"></td>
+            <td id="four"></td>
+            <td id="five"></td>
+            <td id="six"></td>
+            <td id="seven"></td>
+            <td id="eight"></td>
+            <td id="nine"></td>
+        </tr>
+    </table>
+
+    <script>
+        const two = document.getElementById("two");
+        const three = document.getElementById("three");
+        const four = document.getElementById("four");
+        const five = document.getElementById("five");
+        const six = document.getElementById("six");
+        const seven = document.getElementById("seven");
+        const eight =document.getElementById("eight");
+        const nine = document.getElementById("nine");
+
+        function calculator(start, end) {
+            let result = "";
+            for (let i = start; i <= end; i++) {
+                result += `<p>${i}단</p>`;
+                for (let j = 1; j < 10; j++) {
+                    result += `${i} * ${j} = ${i * j}<br>`;
+                }
+            }
+            return result;
+        }
+
+        two.innerHTML = calculator(2, 2);
+        three.innerHTML = calculator(3, 3);
+        four.innerHTML = calculator(4, 4);
+        five.innerHTML = calculator(5, 5);
+        six.innerHTML = calculator(6, 6);
+        seven.innerHTML = calculator(7, 7);
+        eight.innerHTML = calculator(8, 8);
+        nine.innerHTML = calculator(9, 9);
+        
+    </script>
+</body>
+</html>

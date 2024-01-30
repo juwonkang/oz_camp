@@ -1,0 +1,81 @@
+*{
+    margin: 10px;
+    font-family: 'Single Day', cursive;
+
+}
+html{
+    
+    
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    background-color: #f0ddca;
+    font-size: 16px;
+}
+#firstsection{
+    padding: 1px;;
+    background-color: #f0d2b4;
+    border-radius: 40px;
+
+}
+#instagrambox{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    
+   
+
+
+}
+#secondsection{
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #f5c696;
+    border-radius: 40px;
+}
+#thirdsection{
+    border : 10px lightcoral dotted;
+}
+body{
+    padding: 20px;
+    border: 5px solid white;
+    border-radius: 30px;
+    width: 640px;
+    margin: auto;
+}
+h1{
+    font-size: 55px;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 80px;
+}
+#instagram{
+    display: inline;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+
+
+}
+p{
+    font-size: 1.5rem;
+    
+}
+#instagramid{
+    display: inline;
+}
+
+.hole{
+    
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: rgb(247, 239, 239);
+
+    margin: 0 auto;
+}

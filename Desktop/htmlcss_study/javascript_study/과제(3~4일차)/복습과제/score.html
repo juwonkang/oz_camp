@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>나의 기말고사 점수는 __점, 학점은 __!!!</h2>
+    
+
+
+
+
+    <script>
+        var input = prompt("당신의 점수를 입력해주세요!");
+        
+        let grade = 0;
+
+        function calculate(){
+            if (input >= 90) {
+                return "A";
+                
+            } else if (input < 90 && input >= 80) {
+                return "B";
+            } else if (input < 80 && input >= 70) {
+                return "C";
+            } else if (input < 70 && input >= 60) {
+                return "D"; 
+            } else {
+                return "F2";
+            }
+    }
+
+        var h2 = document.querySelector("h2");
+        h2.textContent = `나의 기말고사 점수는 ${input}점, 학점은: ${calculate()}`;
+
+     
+     
+    </script>
+</body>
+</html>

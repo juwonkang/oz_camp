@@ -1,0 +1,36 @@
+.chat-screen-texts{
+    padding: 0;
+    list-style-type: none;
+}
+
+.chat-screen-texts > .text{
+    background-color: lightblue;
+    width: 200px;
+    height: 50px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 30px;
+    position: relative;
+    left: 20px;
+
+}
+.chat-screen-texts > .text::after{
+    content: "";
+    border-right: 16px solid lightblue;
+    border-bottom: 16px solid transparent;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+.chat-screen-texts > .text:hover{
+    background-color: blue;
+    color: red;
+    transition : background-color 1s ease-in;
+}
+
+.chat-screen-texts > .text:hover::after{
+    border-right: 20px solid blue;
+    transition: border-right 1s ease-in;
+}
