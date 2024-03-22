@@ -1,0 +1,72 @@
+[
+  {
+    "image_url": "https://via.placeholder.com/300",
+    "title": "상품 제목 1",
+    "category": "의류",
+    "price": 50000,
+    "description": "이 상품은 테스트용으로 생성된 상품입니다."
+  },
+  {
+    "image_url": "https://via.placeholder.com/300",
+    "title": "상품 제목 2",
+    "category": "신발",
+    "price": 80000,
+    "description": "이 상품은 테스트용으로 생성된 상품입니다."
+  },
+  {
+    "image_url": "https://via.placeholder.com/300",
+    "title": "상품 제목 3",
+    "category": "가전제품",
+    "price": 120000,
+    "description": "이 상품은 테스트용으로 생성된 상품입니다."
+  },
+  {
+    "image_url": "https://via.placeholder.com/300",
+    "title": "상품 제목 4",
+    "category": "액세서리",
+    "price": 35000,
+    "description": "이 상품은 테스트용으로 생성된 상품입니다."
+  },
+  {
+    "image_url": "https://via.placeholder.com/300",
+    "title": "상품 제목 5",
+    "category": "의류",
+    "price": 60000,
+    "description": "이 상품은 테스트용으로 생성된 상품입니다."
+  },
+  {
+    "image_url": "https://via.placeholder.com/300",
+    "title": "상품 제목 6",
+    "category": "화장품",
+    "price": 25000,
+    "description": "이 상품은 테스트용으로 생성된 상품입니다."
+  },
+  {
+    "image_url": "https://via.placeholder.com/300",
+    "title": "상품 제목 7",
+    "category": "가구",
+    "price": 150000,
+    "description": "이 상품은 테스트용으로 생성된 상품입니다."
+  },
+  {
+    "image_url": "https://via.placeholder.com/300",
+    "title": "상품 제목 8",
+    "category": "도서",
+    "price": 20000,
+    "description": "이 상품은 테스트용으로 생성된 상품입니다."
+  },
+  {
+    "image_url": "https://via.placeholder.com/300",
+    "title": "상품 제목 9",
+    "category": "스포츠용품",
+    "price": 75000,
+    "description": "이 상품은 테스트용으로 생성된 상품입니다."
+  },
+  {
+    "image_url": "https://via.placeholder.com/300",
+    "title": "상품 제목 10",
+    "category": "가전제품",
+    "price": 110000,
+    "description": "이 상품은 테스트용으로 생성된 상품입니다."
+  }
+]
